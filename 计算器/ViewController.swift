@@ -66,6 +66,9 @@ class ViewController: UIViewController {
         }
         
     }
+    @IBAction func ac1(_ sender: Any) {
+        result.text=""
+    }
     @IBAction func jia(_ sender: Any) {
         str=1
         temp=Double(result.text!)!
@@ -74,7 +77,9 @@ class ViewController: UIViewController {
     @IBAction func jian(_ sender: Any) {
         str=2
         temp=Double(result.text!)!
-        result.text=""    }
+        result.text=""
+        
+    }
     @IBAction func cheng(_ sender: Any) {
         str=3
         temp=Double(result.text!)!
@@ -88,7 +93,5 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
 }
 
