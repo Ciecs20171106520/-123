@@ -48,6 +48,7 @@ class ViewController: UIViewController {
         {
             temp=temp+Double(result.text!)!
              result.text="\(temp)"
+            //123mmm
         }
         if(str==2)
         {
