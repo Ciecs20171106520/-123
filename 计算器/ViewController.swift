@@ -64,7 +64,6 @@ class ViewController: UIViewController {
             temp=temp/Double(result.text!)!
             result.text="\(temp)"
         }
-        
     }
     @IBAction func ac1(_ sender: Any) {
         result.text=""
