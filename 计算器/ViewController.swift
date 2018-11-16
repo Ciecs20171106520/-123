@@ -71,22 +71,29 @@ class ViewController: UIViewController {
     }
     @IBAction func jia(_ sender: Any) {
         str=1
-        temp=Double(result.text!)!
+        
+        temp=temp+Double(result.text!)!
+        //temp=Double(result.text!)!
         result.text=""
     }
     @IBAction func jian(_ sender: Any) {
         str=2
-        temp=Double(result.text!)!
+       
+        temp=temp-Double(result.text!)!
+        //temp=Double(result.text!)!
         result.text=""
         
     }
     @IBAction func cheng(_ sender: Any) {
         str=3
-        temp=Double(result.text!)!
+        temp=temp*Double(result.text!)!
+        //temp=Double(result.text!)!
         result.text=""    }
     @IBAction func chu(_ sender: Any) {
         str=4
-        temp=Double(result.text!)!
+       
+        temp=temp/Double(result.text!)!
+        //temp=Double(result.text!)!
         result.text=""    }
     @IBOutlet weak var result: UITextField!
     override func viewDidLoad() {
