@@ -68,6 +68,7 @@ class ViewController: UIViewController {
     }
     @IBAction func ac1(_ sender: Any) {
         result.text=""
+        temp=0
     }
     @IBAction func jia(_ sender: Any) {
         str=1
