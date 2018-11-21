@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     var temp:Double = 0
     var str:Double = 0
+    var temp1:Double = 0
     @IBAction func button1(_ sender: Any) {
         result.text=result.text!+"1"
     }
@@ -36,6 +37,9 @@ class ViewController: UIViewController {
         result.text=result.text!+"9"
     }
     @IBAction func ac0(_ sender: Any) {
+        temp=0
+        temp1=0
+        result.text=""
     }
     @IBAction func button8(_ sender: Any) {
         result.text=result.text!+"8"
@@ -44,23 +48,23 @@ class ViewController: UIViewController {
         result.text=result.text!+"0"
     }
     @IBAction func jisuan(_ sender: Any) {
-        if(str==1)
+        if str==1
         {
             temp=temp+Double(result.text!)!
              result.text="\(temp)"
             //123mmm
         }
-        if(str==2)
+        if str==2
         {
             temp=temp-Double(result.text!)!
              result.text="\(temp)"
         }
-        if(str==3)
+        if str==3
         {
             temp=temp*Double(result.text!)!
              result.text="\(temp)"
         }
-        if(str==4)
+        if str==4
         {
             temp=temp/Double(result.text!)!
             result.text="\(temp)"
@@ -68,34 +72,50 @@ class ViewController: UIViewController {
     }
     @IBAction func ac1(_ sender: Any) {
         result.text=""
-        temp=0
+        temp=0 
     }
     @IBAction func jia(_ sender: Any) {
         str=1
-        
         temp=temp+Double(result.text!)!
         //temp=Double(result.text!)!
         result.text=""
     }
     @IBAction func jian(_ sender: Any) {
         str=2
-       
+        if(temp1==0)
+        {
+            temp=Double(result.text!)!
+            temp1=1
+        }
+        else
+        {
         temp=temp-Double(result.text!)!
         //temp=Double(result.text!)!
         result.text=""
-        
+        }
     }
     @IBAction func cheng(_ sender: Any) {
-        str=3
-        temp=temp*Double(result.text!)!
-        //temp=Double(result.text!)!
-        result.text=""    }
+            str=3
+        if(temp1==0)
+        {
+            temp=1
+            temp1=1
+        }
+            temp=temp*Double(result.text!)!
+            //temp=Double(result.text!)!
+            result.text=""
+        }
     @IBAction func chu(_ sender: Any) {
-        str=4
-       
-        temp=temp/Double(result.text!)!
-        //temp=Double(result.text!)!
-        result.text=""    }
+            str=4
+        if(temp1==0)
+        {
+            temp=1
+            temp1=1
+        }
+            temp=temp/Double(result.text!)!
+            //temp=Double(result.text!)!
+            result.text=""
+        }
     @IBOutlet weak var result: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()

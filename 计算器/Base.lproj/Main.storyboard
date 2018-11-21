@@ -152,7 +152,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="ac"/>
                                 <connections>
-                                    <action selector="ac1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CZG-BQ-l8o"/>
+                                    <action selector="ac0:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r9e-Ho-Xnw"/>
                                 </connections>
                             </button>
                         </subviews>
