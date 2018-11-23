@@ -82,16 +82,17 @@ class ViewController: UIViewController {
     }
     @IBAction func jian(_ sender: Any) {
         str=2
-        if(temp1==0)
+        if(temp==0)
         {
             temp=Double(result.text!)!
-            temp1=1
+            result.text=""
         }
         else
         {
         temp=temp-Double(result.text!)!
         //temp=Double(result.text!)!
-        result.text=""
+        result.text="\(temp)"
+         result.text=""
         }
     }
     @IBAction func cheng(_ sender: Any) {
