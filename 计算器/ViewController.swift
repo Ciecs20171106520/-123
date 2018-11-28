@@ -64,16 +64,14 @@ class ViewController: UIViewController {
             temp=temp*Double(result.text!)!
              result.text="\(temp)"
         }
+        
         if str==4
         {
             temp=temp/Double(result.text!)!
             result.text="\(temp)"
         }
     }
-    @IBAction func ac1(_ sender: Any) {
-        result.text=""
-        temp=0 
-    }
+   
     @IBAction func jia(_ sender: Any) {
         str=1
         temp=temp+Double(result.text!)!
@@ -110,13 +108,17 @@ class ViewController: UIViewController {
             str=4
         if(temp1==0)
         {
-            temp=1
+            temp=Double (result.text!)!
+            result.text=""
             temp1=1
         }
+        else
+        {
             temp=temp/Double(result.text!)!
             //temp=Double(result.text!)!
             result.text=""
-        }
+}
+}
     @IBOutlet weak var result: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
