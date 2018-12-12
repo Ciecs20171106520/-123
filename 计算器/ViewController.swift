@@ -12,12 +12,14 @@ class ViewController: UIViewController {
     var temp:Double = 0
     var str:Double = 0
     var temp1:Double = 0
+    var some:Double = 0
     @IBOutlet weak var text1: UITextField!
     @IBAction func button1(_ sender: Any) {
         result.text=result.text!+"1"
     }
     @IBAction func button2(_ sender: Any) {
         result.text=result.text!+"2"
+        
     }
     @IBAction func button3(_ sender: Any) {
         result.text=result.text!+"3"
@@ -53,14 +55,15 @@ class ViewController: UIViewController {
         if str==1
         {
             temp=temp+Double(result.text!)!
-             result.text="\(temp)"
-            
+            result.text="\(temp)"
+            some=temp
             //123mmm
         }
         if str==2
         {
             temp=temp-Double(result.text!)!
              result.text="\(temp)"
+            some=temp
         }
         if str==3
         {
@@ -74,7 +77,6 @@ class ViewController: UIViewController {
             result.text="\(temp)"
         }
     }
-   
     @IBAction func jia(_ sender: Any) {
         str=1
         temp=temp+Double(result.text!)!
@@ -95,7 +97,7 @@ class ViewController: UIViewController {
         temp=temp-Double(result.text!)!
         //temp=Double(result.text!)!
         result.text="\(temp)"
-         result.text=""
+        result.text=""
         }
     }
     @IBAction func cheng(_ sender: Any) {
