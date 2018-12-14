@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var str:Double = 0
     var temp1:Double = 0
     var some:Double = 0
+    var i:Double = 0
     @IBOutlet weak var text1: UITextField!
     @IBAction func button1(_ sender: Any) {
         result.text=result.text!+"1"
@@ -52,7 +53,9 @@ class ViewController: UIViewController {
         result.text=result.text!+"0"
     }
     @IBAction func jisuan(_ sender: Any) {
-        if str==1
+     if i==0
+        {
+      if str==1
         {
             temp=temp+Double(result.text!)!
             result.text="\(temp)"
@@ -63,7 +66,6 @@ class ViewController: UIViewController {
         {
             temp=temp-Double(result.text!)!
              result.text="\(temp)"
-            some=temp
         }
         if str==3
         {
@@ -76,41 +78,58 @@ class ViewController: UIViewController {
             temp=temp/Double(result.text!)!
             result.text="\(temp)"
         }
+            i=1
     }
+        if i==1
+        {
+            result.text="\(temp)"
+           
+        }
+         temp =  Double(result.text!)!
+    }
+        
     @IBAction func jia(_ sender: Any) {
-        str=1
-        temp=temp+Double(result.text!)!
+        
+        temp = temp + Double(result.text!)!
         //temp=Double(result.text!)!
         result.text=""
         text1.text="\(temp)"
+        str=1
+
     }
     @IBAction func jian(_ sender: Any) {
-        str=2
         text1.text="\(temp)"
-        if(temp==0)
+        /*if(temp==0)
         {
             temp=Double(result.text!)!
             result.text=""
-        }
-        else
+        }*/
+        if str==2
         {
+            
         temp=temp-Double(result.text!)!
+        result.text=""
         //temp=Double(result.text!)!
         result.text="\(temp)"
         result.text=""
+        str=2
         }
-    }
+        }
     @IBAction func cheng(_ sender: Any) {
-            str=3
+      
         text1.text="\(temp)"
         if(temp1==0)
         {
             temp=1
             temp1=1
         }
+        if(temp != 0)
+        {
             temp=temp*Double(result.text!)!
             //temp=Double(result.text!)!
             result.text=""
+        }
+        str=3
         }
     @IBAction func chu(_ sender: Any) {
             str=4
