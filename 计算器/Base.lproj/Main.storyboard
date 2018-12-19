@@ -155,13 +155,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aXb-XJ-nmw">
-                                <rect key="frame" x="247" y="115" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.09461785997444605" green="1" blue="0.57313795964173953" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -169,12 +162,11 @@
                     </view>
                     <connections>
                         <outlet property="result" destination="EgA-n3-wjY" id="ZuB-GY-N2u"/>
-                        <outlet property="text1" destination="aXb-XJ-nmw" id="FRC-09-Nsa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1116" y="-322"/>
+            <point key="canvasLocation" x="1364" y="-346"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.11185816749999999" green="0.66666668650000005" blue="0.033115828190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
