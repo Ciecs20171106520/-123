@@ -5,7 +5,6 @@
 //  Created by s20171106520 on 2018/11/7.
 //  Copyright © 2018 s20171106520. All rights reserved.
 //
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -13,11 +12,12 @@ class ViewController: UIViewController {
     var str:Double = 0
     var some1:Double = 0
     var i:Double = 0
+    var number:Double = 0
     @IBOutlet weak var result: UITextField!
     @IBAction func button1(_ sender: Any) {
         if i == 1
         {
-         result.text=""
+            result.text=""
         }
         result.text=result.text!+"1"
     }
@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         {
             result.text=""
         }
-    result.text=result.text!+"4"
+        result.text=result.text!+"4"
     }
     @IBAction func button5(_ sender: Any) {
         if i == 1
@@ -73,6 +73,8 @@ class ViewController: UIViewController {
     @IBAction func ac0(_ sender: Any) {
         temp=0
         str = 0
+        number=0
+        i=0
         result.text=""
     }
     @IBAction func button8(_ sender: Any) {
@@ -90,7 +92,7 @@ class ViewController: UIViewController {
         result.text=result.text!+"0"
     }
     @IBAction func jisuan(_ sender: Any) {
-      if str==1
+        if str==1
         {
             temp=temp+Double(result.text!)!
             result.text="\(temp)"
@@ -100,12 +102,12 @@ class ViewController: UIViewController {
         if str==2
         {
             temp=temp-Double(result.text!)!
-             result.text="\(temp)"
+            result.text="\(temp)"
         }
         if str==3
         {
             temp=temp*Double(result.text!)!
-             result.text="\(temp)"
+            result.text="\(temp)"
         }
         
         if str==4
@@ -113,94 +115,247 @@ class ViewController: UIViewController {
             temp=temp/Double(result.text!)!
             result.text="\(temp)"
         }
+        number=temp
         i = 1
     }/*
-        if i==1
-        {
-         result.text="\(temp)"
-         
-         }
-         temp =  Double(result.text!)!
- */
+     if i==1
+     {
+     result.text="\(temp)"
+     
+     }
+     temp =  Double(result.text!)!
+     */
     
-        
+    
     @IBAction func jia(_ sender: Any) {
-        if temp == 0
+        if(i==1)
         {
-        temp = Double(result.text!)!
-        result.text=""
+            temp=number
+            str=5
+            i=0
         }
-        /*if str == 1
+        if str==1
         {
-        temp = Double(result.text!)!+temp
-        //temp=Double(result.text!)!
-        result.text=""
-        }*/
+            if result.text != ""
+            {
+                temp=temp+Double(result.text!)!
+            }
+            result.text = "\(temp)"
+            
+        }
+        
+        if str==3
+        {
+            if result.text != ""
+            {
+                temp=temp  * Double(result.text!)!
+            }
+            result.text = "\(temp)"
+            
+        }
+        if str==4
+        {
+            if result.text != ""
+            {
+                temp=temp / Double(result.text!)!
+            }
+            result.text = "\(temp)"
+        }
+        if str==2
+        {
+            if result.text != ""
+            {
+                temp=temp-Double(result.text!)!
+            }
+            result.text = "\(temp)"
+        }
+        if str == 0
+        {
+            temp=Double(result.text!)!
+            result.text = ""
+            
+        }        /*if str == 1
+         {
+         temp = Double(result.text!)!+temp
+         //temp=Double(result.text!)!
+         result.text=""
+         }*/
+        result.text = ""
         str=1
     }
     @IBAction func jian(_ sender: Any) {
-        if temp==0
+        if(i==1)
+        {
+            temp=number
+            str=5
+            i=0
+        }
+        if str==1
+        {
+            if result.text != ""
+            {
+                temp=temp+Double(result.text!)!
+            }
+            result.text = "\(temp)"
+            
+        }
+        
+        if str==3
+        {
+            if result.text != ""
+            {
+                temp=temp*Double(result.text!)!
+            }
+            result.text = "\(temp)"
+            
+        }
+        if str==4
+        {
+            if result.text != ""
+            {
+                temp=temp / Double(result.text!)!
+            }
+            result.text = "\(temp)"
+            
+        }
+        if str==2
+        {
+            if result.text != ""
+            {
+                temp=temp-Double(result.text!)!
+            }
+            result.text = "\(temp)"
+        }
+        if str == 0
         {
             temp=Double(result.text!)!
-            result.text=""
+            
+            result.text = ""
         }
-        /*if str == 2
-        {
-        temp=temp-Double(result.text!)!
-        //temp=Double(result.text!)!
-        result.text=""
-        }*/
-        str=2
-        }
-    @IBAction func cheng(_ sender: Any) {
-      
-       /* text1.text="\(temp)"
-        iftemp ==0
-        {
-            temp=1
-            temp1=1
-        }
-        if(temp != 0)
-        {
-            temp=temp*Double(result.text!)!
-            //temp=Double(result.text!)!
-            result.text=""
-        }
-        str=3
-        }*/
-        if temp==0
-        {
-            temp=Double(result.text!)!
-            result.text=""
-        }
+        result.text = ""
         /*if str == 2
          {
          temp=temp-Double(result.text!)!
          //temp=Double(result.text!)!
          result.text=""
          }*/
-        str=3
-        }
-    @IBAction func chu(_ sender: Any) {
-         /*
-        text1.text="\(temp)"
-        if(temp1==0)
+        str=2
+    }
+    @IBAction func cheng(_ sender: Any) {
+        if(i==1)
         {
-            temp=Double (result.text!)!
-            result.text=""
-            temp1=1
+            temp=number
+            str=5
+            i=0
         }
-        else
+        if str==1
         {
-            temp=temp/Double(result.text!)!
-            //temp=Double(result.text!)!
-            result.text=""
-}*/
-        if temp==0
+            if result.text != ""
+            {
+                temp=temp+Double(result.text!)!
+            }
+            result.text = "\(temp)"
+            
+        }
+        
+        if str==3
+        {
+            if result.text != ""
+            {
+                temp=temp * Double(result.text!)!
+            }
+            result.text = "\(temp)"
+            
+        }
+        if str==4
+        {
+            if result.text != ""
+            {
+                temp=temp / Double(result.text!)!
+            }
+            result.text = "\(temp)"
+            
+        }
+        if str==2
+        {
+            if result.text != ""
+            {
+                temp=temp-Double(result.text!)!
+            }
+            result.text = "\(temp)"
+        }
+        if str == 0
         {
             temp=Double(result.text!)!
-            result.text=""
+            
+            result.text = ""
         }
+        result.text = ""
+        str=3
+    }
+    @IBAction func chu(_ sender: Any) {
+        if(i==1)
+        {
+            temp=number
+            str=5
+            i=0
+        }
+        if str==1
+        {
+            if result.text != ""
+            {
+                temp=temp+Double(result.text!)!
+            }
+            result.text = "\(temp)"
+            
+        }
+        
+        if str==3
+        {
+            if result.text != ""
+            {
+                temp=temp * Double(result.text!)!
+            }
+            result.text = "\(temp)"
+            
+        }
+        if str==4
+        {
+            if result.text != ""
+            {
+                temp=temp / Double(result.text!)!
+            }
+            result.text = "\(temp)"
+            
+        }
+        if str==2
+        {
+            if result.text != ""
+            {
+                temp=temp-Double(result.text!)!
+            }
+            result.text = "\(temp)"
+        }
+        if str == 0
+        {
+            temp=Double(result.text!)!
+            
+            result.text = ""
+        }        /*if str == 1
+         
+         text1.text="\(temp)"
+         if(temp1==0)
+         {
+         temp=Double (result.text!)!
+         result.text=""
+         temp1=1
+         }
+         else
+         {
+         temp=temp/Double(result.text!)!
+         //temp=Double(result.text!)!
+         result.text=""
+         }*/result.text = ""
         str=4
     }
     override func viewDidLoad() {
