@@ -300,6 +300,7 @@ class ViewController: UIViewController {
             str=5
             i=0
         }
+        //1
         if str==1
         {
             if result.text != ""
